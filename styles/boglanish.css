@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "K2D", sans-serif;
+  background-color: #fff;
+  color: #333;
+
+  background-image: url("/assets/mebel0.jpg");
+  backdrop-filter: blur(10px);
+  
+  height: calc(120vh - 100px);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  backdrop-filter: (10px);
+}
+
+header {
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  backdrop-filter: blur(15px);
+  border-radius: 150px;
+  width: 100%;
+  margin-left: 15px;
+
+  margin: 0 auto;
+
+  /* background-image: linear-gradient(#d85305, #de640e ); */
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  margin-left: -105px;
+  margin-top: -20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+nav a {
+  color: rgba(14, 13, 13, 0.89);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  margin-left: 45px;
+}
+
+nav a:hover {
+  color: #ffe0cc;
+}
+
+.hero {
+  padding: 370px 0;
+  padding-top: 265px;
+}
+
+.hero__wrapper {
+  /* background-color: red; */
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero__text {
+  background-color: rgba(255, 255, 255, 0.421);
+  backdrop-filter: blur(5px);
+  border-radius: 5%;
+}
+
+.hero__text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.hero__text h1 span {
+  color: #5e2a17;
+}
+
+.hero__text p {
+  color: #4e0707;
+  margin-bottom: 30px;
+  max-width: 400px;
+  padding: 25px 0;
+  display: block;
+}
+
+.btn {
+  align-self: flex-end;
+  background-color: #333333c6;
+  color: white;
+  border: none;
+  padding: 17px 30px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  backdrop-filter: blur(7px);
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- FAQAT BOG'LANISH MAIN QISMI --- */
+
+.contact-section {
+    
+  padding: 55px 35%;
+  border-radius: 5%;
+
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.6rem;
+  color:rgb(249, 245, 245);
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 15px;
+  text-shadow: 0px 2px;
+  backdrop-filter: blur(12px);
+  margin: 43px;
+  padding: 17px;
+  border-radius: 15px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+  display: flex;
+}
+/* BUTTON CONTAINER */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* ASOSIY BUTTON STILI */
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #8b5a2b, #3e2723); /* jigar gradient */
+  color: white;
+  padding: 16px 36px;
+  border-radius: 40px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  backdrop-filter: blur(8px);
+}
+
+/* ICON STILI */
+.contact-btn i {
+  font-size: 1.3rem;
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.contact-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  background: linear-gradient(135deg, #a56b38, #4e342e);
+}
+
+.contact-btn:hover i {
+  transform: scale(1.2);
+}
+
+/* TUGMALAR RANGLARI (MEVELGA MOS JIGARRANG TONLAR) */
+
+/* Telefon */
+.contact-btn.call {
+  background: linear-gradient(135deg, #c7855e, #8d5524);
+  box-shadow: 0 6px 20px rgba(141, 85, 36, 0.4);
+}
+
+/* Telegram */
+.contact-btn.telegram {
+  background: linear-gradient(135deg, #5e8b7e, #436d5a);
+  box-shadow: 0 6px 20px rgba(94, 139, 126, 0.4);
+}
+
+/* Instagram */
+.contact-btn.instagram {
+  background: linear-gradient(135deg, #b06ab3, #4568dc);
+  box-shadow: 0 6px 20px rgba(128, 90, 213, 0.4);
+}
+
+/* Bot */
+.contact-btn.bot {
+  background: linear-gradient(135deg, #6d4c41, #3e2723);
+  box-shadow: 0 6px 20px rgba(109, 76, 65, 0.5);
+}
+
+/* RESPONSIV DIZAYN */
+@media (max-width: 768px) {
+  .contact-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact-btn {
+    width: 80%;
+    justify-content: center;
+  }
+}
+
+
+/* MOBILGA MOS */
+@media (max-width: 768px) {
+  .contact-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* 3️⃣ Juda kichik ekranlar (400px gacha) */
+@media (max-width: 400px) {
+  .logo h1 {
+    font-size: 22px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .order-btn a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .hero-image img {
+    width: 250px;
+  }
+}
